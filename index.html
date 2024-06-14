@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Images/king.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Chess</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="main">
+    <div class=" w3-top w3-display-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="#home" class="w3-bar-item w3-button"><b>The</b> Chess</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          
+          <div class="w3-right w3-hide-small">
+            <div class="w3-dropdown-hover">
+                <button onclick="myFunction()" class="w3-bar-item">Game</button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+                  <a href="#" class="w3-bar-item w3-button w3-animate-bottom">classic</a>
+                  <a href="#" class="w3-bar-item w3-button w3-animate-bottom">960</a>
+                  <a href="#" class="w3-bar-item w3-button w3-animate-bottom">blitz</a>
+                </div>
+              </div>
+            <a href="#contact" class="w3-bar-item w3-button">Новости</a>
+            <a href="#projects" class="w3-bar-item w3-button">Скачать</a>
+            <a href="#about" class="w3-bar-item w3-button">Регистрация</a>
+            <a href="#contact" class="w3-bar-item w3-button">Пополнить счет</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Закрыть &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Форум</a>
+        <a href="#" class="w3-bar-item w3-button">Поддержка</a>
+        <a href="#" class="w3-bar-item w3-button">Медиа</a>
+      </div>
+
+    <div class="cont-100vh w3-lime w3-rest">
+        <div class="w3-animate-fading w3-display-middle">
+        <h1><b>Одна из самых древних игр в мире...</b></h1>
+        </div>
+    </div>    
+
+    <div class="cont-100vh w3-display-container w3-padding w3-green w3-hover-yellow w3-half"> 
+        <div class="w3-display-middle w3-center reveal">
+        
+        <h1>Звук хода пешкой</h1>
+        <audio controls src="./Audio/pawn.mp3"></audio>
+        <p>Ша́хматы (перс. شاه مات ‘шах мат’, буквальный перевод «шах умер»[4]) — настольная логическая игра с шахматными фигурами на 64-клеточной доске, сочетающая в себе элементы искусства (в том числе в части шахматной композиции), науки и спорта</p>
+          <p>Все права защищены(с)</p>
+        </div>
+    </div> 
+
+    <div class="cont-100vh w3-padding w3-display-container w3-theme-d1 w3-hover-orange w3-center w3-rest "> 
+        <div class="w3-display-middle">
+        <h1>Шахматный дебют</h1>
+            <video controls src="./Video/chess.mp4"></video>
+            <p>Ловушка в шахматах</p>
+            </div>
+    </div> 
+
+    <div class="cont-100vh w3-metro-dark-blue w3-rest w3-display-container">
+        <div class="w3-display-middle">
+            
+        <div class="container_ofus">
+            <div class="flipper" id="target">
+                <div class="front">
+                  <a href="#target" class="home button">Сообщество</a>
+               
+                <h1>Шахматы</h1>
+                  </div>
+                <div class="back">
+                  <a href="#close" class="close button"><i class="fa fa-home"></i></a>
+                  <div class="inner">
+                    <h2>Подписывайтесь</h2>
+                    <p><a href="https://vk.com/chessgames">Вконтакте</a></p>
+                    <p><a href="https://t.me/chessgames">Телеграмм</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+        </div>
+    </div> 
+</div>
+   <div class="w3-display-container">
+    <div class="w3-bottom w3-white w3-center">
+        
+        <button class="w3-button w3-white w3-xlarge" onclick="w3_open()">☰</button>
+     </div>
+   </div> 
+   <!-- Sidebar -->
+ 
+  <script src="./script.js"></script>
+</body>
+</html>
+
